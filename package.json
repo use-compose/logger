@@ -1,0 +1,22 @@
+{
+  "name": "@use-compose/logger",
+  "version": "0.0.1",
+  "description": "Simple Shared Logger ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/use-compose/logger.git"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/use-compose/logger/issues"
+  },
+  "homepage": "https://github.com/use-compose/logger#readme"
+}
