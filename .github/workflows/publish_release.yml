@@ -10,8 +10,8 @@ on:
 jobs:
   ci:
     uses: arthur-plazanet/github-actions-kit/.github/workflows/reusable_release_publish.yml@main
-    with:
-      node-version: '20'
-      publish: true
+    # with:
+    # node-version: '20'
+    # publish: true
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
