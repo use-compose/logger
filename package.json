@@ -1,6 +1,7 @@
 {
   "name": "@use-compose/logger",
-  "version": "0.0.2",
+  "private": false,
+  "version": "0.0.3",
   "description": "Simple Shared Logger ",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -34,5 +35,8 @@
     "tsup": "8.5.0",
     "typescript": "5.9.2",
     "vitest": "3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
