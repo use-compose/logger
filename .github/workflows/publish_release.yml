@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  ci:
+    uses: arthur-plazanet/github-actions-kit/.github/workflows/npm-release.yml@main
+    with:
+      node-version: '20'
+      publish: true
+    secrets:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
