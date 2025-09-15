@@ -1,9 +1,21 @@
 {
   "name": "@use-compose/logger",
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.3",
   "description": "Simple Shared Logger ",
-  "main": "index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "!**/*.map"
+  ],
   "scripts": {
+    "build": "npx tsup --dts",
     "test": "vitest"
   },
   "repository": {
@@ -18,5 +30,13 @@
   "bugs": {
     "url": "https://github.com/use-compose/logger/issues"
   },
-  "homepage": "https://github.com/use-compose/logger#readme"
+  "homepage": "https://github.com/use-compose/logger#readme",
+  "devDependencies": {
+    "tsup": "8.5.0",
+    "typescript": "5.9.2",
+    "vitest": "3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
