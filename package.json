@@ -1,14 +1,18 @@
 {
   "name": "@use-compose/logger",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple Shared Logger ",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js"
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
   },
   "files": [
     "dist",
